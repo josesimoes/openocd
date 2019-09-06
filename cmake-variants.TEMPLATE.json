@@ -1,0 +1,38 @@
+{
+    "buildType": {
+      "default": "debug",
+        "choices": { 
+          "debug": {
+            "short": "Debug",
+            "long": "Emit debug information without performing optimizations",
+            "buildType": "Debug"
+          },
+          "minsize": {
+            "short": "MinSizeRel",
+            "long": "Optimize for smallest binary size",
+            "buildType": "MinSizeRel"
+          },
+          "reldeb": {
+            "short": "RelWithDebInfo",
+            "long": "Perform optimizations AND include debugging information",
+            "buildType": "RelWithDebInfo"
+          }    
+        }
+    },
+  
+    "linkage": {
+      "default": "",
+      "choices": {
+              
+        "OpenOCD": {
+          "short": "OpenOCD",
+          "settings": {
+            "BUILD_VERSION" : "0.9.99.999",
+            "CMAKE_SH" : "CMAKE_SH-NOTFOUND",
+            "BUILD_XDS110" : "ON",
+            "BUILD_STLINK" : "ON"
+          }
+        }
+    }
+  }
+}
